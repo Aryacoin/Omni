@@ -5,14 +5,18 @@ Aryacoin Core integration/staging tree
 
 https://aryacoin.io
 
-What is Aryacoin?
+What is OmniAYA?
 ----------------
 
-Aryacoin is an experimental digital currency that enables instant payments to
-anyone, anywhere in the world. Aryacoin uses peer-to-peer technology to operate
-with no central authority: managing transactions and issuing money are carried
-out collectively by the network. Aryacoin Core is the name of open source
-software which enables the use of this currency.
+OmniAYA is experimental OmniLayer implementation on Aryacoin. This layer allows users to create different types of tokens on the Aryacoin blockchain along with NFT's. 
+This implementation is based on Omnicore which is the omnilayer implementation on Bitcoin Blockchain.
+More info on OmniLayer can be found at:
+
+https://github.com/OmniLayer/omnicore
+
+The Omnilayer specs can be found at:
+
+https://github.com/OmniLayer/spec
 
 For more information, as well as an immediately useable, binary version of
 the Aryacoin Core software, see [https://aryacoin.io](https://aryacoin.io).
