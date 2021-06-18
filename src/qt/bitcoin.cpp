@@ -38,6 +38,8 @@
 
 #include <walletinitinterface.h>
 
+#include <omnicore/utilsui.h>
+
 #include <memory>
 #include <stdint.h>
 
@@ -426,6 +428,9 @@ int GuiMain(int argc, char* argv[])
     std::tie(argc, argv) = winArgs.get();
 #endif
     SetupEnvironment();
+
+    // Indicate UI mode
+    fQtMode = true;
 
     std::unique_ptr<interfaces::Node> node = interfaces::MakeNode();
 

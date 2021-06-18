@@ -22,6 +22,9 @@
 #include <util/strencodings.h>
 #include <walletinitinterface.h>
 
+#include <omnicore/utilsui.h>
+#include <omnicore/version.h>
+
 #include <stdio.h>
 
 const std::function<std::string(const char*)> G_TRANSLATION_FUN = nullptr;
@@ -77,7 +80,7 @@ static bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (HelpRequested(gArgs) || gArgs.IsArgSet("-version")) {
-        std::string strUsage = PACKAGE_NAME " Daemon version " + FormatFullVersion() + "\n";
+        std::string strUsage = PACKAGE_NAME " Daemon version " + OmniCoreVersion() + "\n";
 
         if (gArgs.IsArgSet("-version"))
         {
@@ -197,6 +200,7 @@ int main(int argc, char* argv[])
 
     // Connect bitcoind signal handlers
     noui_connect();
+    fQtMode = false;
 
     return (AppInit(argc, argv) ? EXIT_SUCCESS : EXIT_FAILURE);
 }

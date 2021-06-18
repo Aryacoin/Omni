@@ -9,7 +9,12 @@ define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2021)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Aryacoin Core]])
-AC_INIT([Aryacoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_REVISION, m4_if(_CLIENT_VERSION_BUILD, [0], [], _CLIENT_VERSION_BUILD))m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/Aryacoin/Aryacoin/issues],[aryacoin],[https://aryacoin.io/])
+define(_OMNICORE_VERSION_MAJOR, 0)
+define(_OMNICORE_VERSION_MINOR, 7)
+define(_OMNICORE_VERSION_PATCH, 0)
+define(_OMNICORE_VERSION_BUILD, 0)
+define(_OMNICORE_VERSION_RC, 0)
+AC_INIT([Aryacoin Core],m4_join([.], _OMNICORE_VERSION_MAJOR, _OMNICORE_VERSION_MINOR, _OMNICORE_VERSION_PATCH, m4_if(_OMNICORE_VERSION_BUILD, [0], [], _OMNICORE_VERSION_BUILD))m4_if(_OMNICORE_VERSION_RC, [0], [], [rc]_OMNICORE_VERSION_RC),[https://github.com/Aryacoin/OmniAYA/issues],[aryacoin],[https://aryacoin.io/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -428,7 +433,7 @@ AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
   [build aryacoin-cli aryacoin-tx aryacoin-wallet (default=yes)])],
   [build_bitcoin_utils=$withval],
-  [build_bitcoin_utils=yes])
+  [build_bitcoin_utils=no])
 
 AC_ARG_ENABLE([util-cli],
   [AS_HELP_STRING([--enable-util-cli],
@@ -1470,6 +1475,16 @@ AC_SUBST(BITCOIN_CLI_NAME)
 AC_SUBST(BITCOIN_TX_NAME)
 AC_SUBST(BITCOIN_WALLET_TOOL_NAME)
 
+
+AC_DEFINE(OMNICORE_VERSION_MAJOR, _OMNICORE_VERSION_MAJOR, [Omni Core major version])
+AC_DEFINE(OMNICORE_VERSION_MINOR, _OMNICORE_VERSION_MINOR, [Omni Core minor version])
+AC_DEFINE(OMNICORE_VERSION_PATCH, _OMNICORE_VERSION_PATCH, [Omni Core patch version])
+AC_DEFINE(OMNICORE_VERSION_BUILD, _OMNICORE_VERSION_BUILD, [Omni Core build number])
+AC_SUBST(OMNICORE_VERSION_MAJOR, _OMNICORE_VERSION_MAJOR)
+AC_SUBST(OMNICORE_VERSION_MINOR, _OMNICORE_VERSION_MINOR)
+AC_SUBST(OMNICORE_VERSION_PATCH, _OMNICORE_VERSION_PATCH)
+AC_SUBST(OMNICORE_VERSION_BUILD, _OMNICORE_VERSION_BUILD)
+
 AC_SUBST(RELDFLAGS)
 AC_SUBST(DEBUG_CPPFLAGS)
 AC_SUBST(WARN_CXXFLAGS)
@@ -1507,6 +1522,7 @@ AC_SUBST(ZMQ_LIBS)
 AC_SUBST(PROTOBUF_LIBS)
 AC_SUBST(QR_LIBS)
 AC_CONFIG_FILES([Makefile src/Makefile doc/man/Makefile share/setup.nsi share/qt/Info.plist test/config.ini])
+AC_CONFIG_FILES([src/omnicore/res/omnicore-setup-win.nsi])
 AC_CONFIG_FILES([contrib/devtools/split-debug.sh],[chmod +x contrib/devtools/split-debug.sh])
 AM_COND_IF([HAVE_DOXYGEN], [AC_CONFIG_FILES([doc/Doxyfile])])
 AC_CONFIG_LINKS([contrib/filter-lcov.py:contrib/filter-lcov.py])
