@@ -74,21 +74,21 @@ using namespace mastercore;
 CCriticalSection cs_tally;
 
 //! Exodus address (changes based on network)
-static std::string exodus_address = "6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V";
+static std::string exodus_address = "AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38";
 
 //! Mainnet Exodus address
-static const std::string exodus_mainnet = "6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V";
+static const std::string exodus_mainnet = "AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38";
 //! Testnet Exodus address
-static const std::string exodus_testnet = "mpEXodUS8LUsXUHm1Vyk7b1AzG9CkKw6Mp";
+static const std::string exodus_testnet = "mxodUSi96BfpyLhbwuDBWBhe3LftE2gxhC";
 //! Regtest Exodus address
-static const std::string exodus_regtest = "moPocgnrjjtnx8FWqLTQUxXmWvGiMmQUdo";
+static const std::string exodus_regtest = "n3kqQAekxpw4YcCP7B1iAaDqyeWNotkH9e";
 
 //! Mainnet AYA address
-static const std::string aya_mainnet = "6kkYNUiQFDbYoj7Pr8wc9oqJ1TjDNtxy77";
+static const std::string aya_mainnet = "AJ23Fxg7ESpQARg3rVUprBMHSaus1Zpgke";
 //! Testnet AYA address
-static const std::string aya_testnet = "n1yVXkHgAuQ8bNtwMWVZkGMK76cUqWngP9";
+static const std::string aya_testnet = "mkhnEiVa1h2r1hCV9ersYhuKBYoD3Ahia1";
 //! Regtest AYA address
-static const std::string aya_regtest = "mgimY5b4MTXRdc9LgQk9KYQtB37W4UmKwT";
+static const std::string aya_regtest = "n3kqQAekxpw4YcCP7B1iAaDqyeWNotkH9e";
 
 static int nWaterlineBlock = 0;
 

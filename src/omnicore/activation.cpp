@@ -141,7 +141,7 @@ bool CheckActivationAuthorization(const std::string& sender)
 {
     std::set<std::string> whitelisted;
 
-    whitelisted.insert("6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V");
+    whitelisted.insert("AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38");
 
     // Testnet / Regtest
     // use -omniactivationallowsender for testing
@@ -179,7 +179,7 @@ bool CheckDeactivationAuthorization(const std::string& sender)
 {
     std::set<std::string> whitelisted;
 
-    whitelisted.insert("6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V");
+    whitelisted.insert("AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38");
 
     // Testnet / Regtest
     // use -omniactivationallowsender for testing

@@ -88,7 +88,7 @@ bool CheckAlertAuthorization(const std::string& sender)
     std::set<std::string> whitelisted;
 
     // Mainnet
-    whitelisted.insert("6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V");
+    whitelisted.insert("AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38");
 
     // Testnet / Regtest
     // use -omnialertallowsender for testing

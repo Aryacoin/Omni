@@ -155,8 +155,8 @@ UniValue omni_getnonfungibletokens(const JSONRPCRequest& request)
                        "]\n"
                    },
                    RPCExamples{
-                       HelpExampleCli("omni_getnonfungibletokens", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" 1")
-                       + HelpExampleRpc("omni_getnonfungibletokens", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", 1")
+                       HelpExampleCli("omni_getnonfungibletokens", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" 1")
+                       + HelpExampleRpc("omni_getnonfungibletokens", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", 1")
                    }
                 }.ToString());
 
@@ -583,8 +583,8 @@ static UniValue omni_getbalance(const JSONRPCRequest& request)
                    "}\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_getbalance", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" 1")
-                   + HelpExampleRpc("omni_getbalance", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", 1")
+                   HelpExampleCli("omni_getbalance", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" 1")
+                   + HelpExampleRpc("omni_getbalance", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", 1")
                }
             }.ToString());
 
@@ -682,8 +682,8 @@ static UniValue omni_getallbalancesforaddress(const JSONRPCRequest& request)
                    "]\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_getallbalancesforaddress", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\"")
-                   + HelpExampleRpc("omni_getallbalancesforaddress", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\"")
+                   HelpExampleCli("omni_getallbalancesforaddress", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\"")
+                   + HelpExampleRpc("omni_getallbalancesforaddress", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\"")
                }
             }.ToString());
 

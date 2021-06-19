@@ -1512,8 +1512,8 @@ static UniValue omni_sendfreeze(const JSONRPCRequest& request)
                    "\"hash\"                  (string) the hex-encoded transaction hash\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_sendfreeze", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\" 1 \"0\"")
-                   + HelpExampleRpc("omni_sendfreeze", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\", 1, \"0\"")
+                   HelpExampleCli("omni_sendfreeze", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\" 1 \"0\"")
+                   + HelpExampleRpc("omni_sendfreeze", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\", 1, \"0\"")
                }
             }.ToString());
 
@@ -1569,8 +1569,8 @@ static UniValue omni_sendunfreeze(const JSONRPCRequest& request)
                    "\"hash\"                  (string) the hex-encoded transaction hash\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_sendunfreeze", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\" 1 0")
-                   + HelpExampleRpc("omni_sendunfreeze", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\", 1, 0")
+                   HelpExampleCli("omni_sendunfreeze", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\" 1 0")
+                   + HelpExampleRpc("omni_sendunfreeze", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", \"3HTHRxu3aSDV4deakjC7VmsiUp7c6dfbvs\", 1, 0")
                }
             }.ToString());
 
@@ -1677,8 +1677,8 @@ static UniValue omni_sendactivation(const JSONRPCRequest& request)
                    "\"hash\"                  (string) the hex-encoded transaction hash\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_sendactivation", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" 1 370000 999")
-                   + HelpExampleRpc("omni_sendactivation", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", 1, 370000, 999")
+                   HelpExampleCli("omni_sendactivation", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" 1 370000 999")
+                   + HelpExampleRpc("omni_sendactivation", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", 1, 370000, 999")
                }
             }.ToString());
 
@@ -1726,8 +1726,8 @@ static UniValue omni_senddeactivation(const JSONRPCRequest& request)
                    "\"hash\"                  (string) the hex-encoded transaction hash\n"
                },
                RPCExamples{
-                   HelpExampleCli("omni_senddeactivation", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\" 1")
-                   + HelpExampleRpc("omni_senddeactivation", "\"6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V\", 1")
+                   HelpExampleCli("omni_senddeactivation", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\" 1")
+                   + HelpExampleRpc("omni_senddeactivation", "\"AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38\", 1")
                }
             }.ToString());
 

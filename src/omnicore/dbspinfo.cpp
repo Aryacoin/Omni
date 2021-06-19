@@ -113,14 +113,14 @@ CMPSPInfo::CMPSPInfo(const fs::path& path, bool fWipe)
     implied_tomni.data = "Reserved";
 
     implied_aya.issuer = EncodeDestination(AyaAddress());
-    implied_aya.updateIssuer(0, 0, implied_tomni.issuer);
+    implied_aya.updateIssuer(0, 0, implied_aya.issuer);
     implied_aya.txid = Params().GenesisBlock().vtx[0]->GetHash(); // Use genesis coinbase as txid! Used for DB lookups
     implied_aya.prop_type = MSC_PROPERTY_TYPE_DIVISIBLE;
     implied_aya.num_tokens = MAX_MONEY;
     implied_aya.category = "N/A";
     implied_aya.subcategory = "N/A";
     implied_aya.name = "Aya";
-    implied_aya.url = "http://aryacoin.com";
+    implied_aya.url = "http://aryacoin.io";
     implied_aya.data = "Aya tokens serve as the binding between Aryacoin, smart properties and contracts created on OmniAya.";
     implied_aya.fixed = true;
 

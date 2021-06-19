@@ -16,7 +16,7 @@ BOOST_FIXTURE_TEST_SUITE(omnicore_exodus_tests, BasicTestingSetup)
 
 BOOST_AUTO_TEST_CASE(exodus_address_mainnet)
 {
-    BOOST_CHECK(CTxDestination(DecodeDestination("6eXoDUSUV7yrAxKVNPEeKAHMY8San5Z37V")) ==
+    BOOST_CHECK(CTxDestination(DecodeDestination("AexoDusyQfrYZnUfNWGwWLt2oKoviRSB38")) ==
                 ExodusAddress());
     BOOST_CHECK(!(CTxDestination(DecodeDestination("1rDQWR9yZLJY7ciyghAaF7XKD9tGzQuP6")) ==
                 ExodusAddress()));
@@ -26,7 +26,7 @@ BOOST_AUTO_TEST_CASE(exodus_address_testnet)
 {
     SelectParams(CBaseChainParams::TESTNET);
 
-    BOOST_CHECK(CTxDestination(DecodeDestination("mpEXodUS8LUsXUHm1Vyk7b1AzG9CkKw6Mp")) ==
+    BOOST_CHECK(CTxDestination(DecodeDestination("mxodUSi96BfpyLhbwuDBWBhe3LftE2gxhC")) ==
                 ExodusAddress());
     BOOST_CHECK(!(CTxDestination(DecodeDestination("moneyqMan7uh8FqdCA2BV5yZ8qVrc9ikLP")) ==
                 ExodusAddress()));
@@ -38,7 +38,7 @@ BOOST_AUTO_TEST_CASE(exodus_address_regtest)
 {
     SelectParams(CBaseChainParams::REGTEST);
 
-    BOOST_CHECK(CTxDestination(DecodeDestination("moPocgnrjjtnx8FWqLTQUxXmWvGiMmQUdo")) ==
+    BOOST_CHECK(CTxDestination(DecodeDestination("n3kqQAekxpw4YcCP7B1iAaDqyeWNotkH9e")) ==
                 ExodusAddress());
     BOOST_CHECK(!(CTxDestination(DecodeDestination("moneyqMan7uh8FqdCA2BV5yZ8qVrc9ikLP")) ==
                 ExodusAddress()));
